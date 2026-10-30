@@ -1,0 +1,35 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.env
+.DS_Store
+*.zip
+Thumbs.db
+
+# Segredos, configurações pessoais e material de agente local
+.env.*
+!.env.example
+.streamlit/secrets.toml
+.claude/settings.local.json
+.claude/settings.local.*
+
+# Conteúdo local ainda não liberado para redistribuição
+# .gitignore não remove arquivos que já estejam rastreados.
+data/
+outputs/
+notebooks/
+.phase6-backups/
+
+# Arquivos internos de desenvolvimento
+.claude/
+CLAUDE.md
+GUIA_CLAUDE_CODE.md
+
+# Rascunhos e documentos pendentes de revisao publica
+POST_LINKEDIN.md
+AUDITORIA_HISTORICA_2013_2014.md
+ESTUDO_PILOTO_CLIMA_2013_2014.md
+
+# Backups de documentacao
+*.before-phase*.md
