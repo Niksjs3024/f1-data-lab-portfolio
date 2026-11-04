@@ -2,11 +2,17 @@
 
 **Análise histórica da Fórmula 1 com Python, estatística, machine learning e Streamlit**
 
+## Dashboard completo online
+
+**[🏎️ Acessar o F1 Data Lab — dashboard interativo](https://f1-data-lab-completo.streamlit.app/)**
+
+A aplicação hospedada executa o `app.py` da branch [`feature/full-dashboard`](https://github.com/Niksjs3024/f1-data-lab-portfolio/tree/feature/full-dashboard), com as seis áreas originais, gráficos, filtros, comparações históricas e avaliação de Machine Learning. Este é o **dashboard analítico completo**, não a demonstração informativa.
+
 O F1 Data Lab transforma um estudo exploratório que começou no Google Colab em uma aplicação local, modular e auditável. A versão atual separa ingestão e validação, análise, modelagem, visualizações e interface. A pasta `notebooks/` conserva o contexto histórico; não é a fonte de verdade da implementação atual.
 
-> **Autorização para redistribuição dos dados ainda não confirmada.** Os cinco CSVs históricos locais correspondem byte a byte aos membros comparados na Fase 7C da distribuição *Formula 1 Race Data*, publicada por cjgdev no [Kaggle](https://www.kaggle.com/datasets/cjgdev/formula-1-race-data-19502017); a página declara CC BY-NC-SA 4.0. Essa correspondência e declaração não confirmam a fonte primária anterior ao Kaggle, a versão/release exato, a cadeia de direitos nem autorização para redistribuição pública. Dados climáticos, dados de terceiros e resultados derivados também não são automaticamente liberados. Este repositório não deve incluir `data/` ou `outputs/` até haver confirmação documentada dos direitos aplicáveis. Consulte [Proveniência e licenças](docs/PROVENIENCIA_E_LICENCAS.md).
+> **Situação dos dados por branch:** a `main` conserva a edição original, sem os CSVs históricos ou climáticos. A branch [`feature/full-dashboard`](https://github.com/Niksjs3024/f1-data-lab-portfolio/tree/feature/full-dashboard) inclui dez CSVs necessários ao dashboard online, cuja publicação o responsável informou estar expressamente autorizada. A autorização não foi verificada independentemente e não concede automaticamente direitos de reutilização a terceiros. Consulte a [documentação de proveniência da versão completa](https://github.com/Niksjs3024/f1-data-lab-portfolio/blob/feature/full-dashboard/docs/PROVENIENCIA_E_LICENCAS.md).
 
-> **Uma cópia apenas do código não reproduz a aplicação completa.** O dashboard exige os cinco CSVs históricos locais para iniciar. A área climática requer arquivos locais adicionais. A distribuição Kaggle correspondente aos CSVs foi identificada, mas isso não equivale a confirmar autorização de aquisição ou redistribuição para este projeto; os arquivos não são distribuídos aqui.
+> **Execução local a partir da `main`:** esta branch não fornece os arquivos de dados necessários à inicialização do `app.py`. Para consultar o dashboard completo já hospedado, use o link acima; para examinar seu código com os CSVs selecionados, veja a branch `feature/full-dashboard`.
 
 ## O projeto
 
@@ -97,7 +103,7 @@ Antes de iniciar o dashboard, os cinco arquivos abaixo precisam estar disponíve
 - `constructors.csv`
 - `status.csv`
 
-**Eles não fazem parte desta distribuição e não há autorização de redistribuição confirmada.** A distribuição identificada é *Formula 1 Race Data*, por cjgdev no [Kaggle](https://www.kaggle.com/datasets/cjgdev/formula-1-race-data-19502017); a página declara CC BY-NC-SA 4.0. Na Fase 7C, os cinco CSVs locais coincidiram byte a byte com os membros correspondentes do ZIP comparado. A fonte primária anterior, o release exato, a cadeia de direitos e as condições de uso aplicáveis continuam pendentes; não obtenha nem redistribua arquivos sem confirmar que está autorizado. Sem esses arquivos, o carregamento principal interrompe o app com erro, e clonar o código não basta para abrir todas as áreas.
+**Os cinco CSVs históricos não estão incluídos na `main`, mas estão presentes na branch `feature/full-dashboard`.** A distribuição correspondente foi identificada como *Formula 1 Race Data*, por cjgdev no [Kaggle](https://www.kaggle.com/datasets/cjgdev/formula-1-race-data-19502017), cuja página declara CC BY-NC-SA 4.0. O responsável pelo projeto informou possuir autorização expressa para a publicação dos arquivos selecionados; a cadeia completa de direitos não foi verificada independentemente. Para executar apenas esta branch localmente, é preciso fornecer os arquivos necessários.
 
 Para iniciar, depois de preparar os dados localmente:
 
@@ -127,7 +133,7 @@ independente no Windows, utilizando Python 3.12.
 - As seis áreas do Streamlit foram verificadas manualmente no navegador local.
 - Nenhuma alteração pendente no Git ao término da validação.
 
-Os datasets e gráficos necessários à validação não integram o repositório.
+Os dados e gráficos utilizados na validação local não integram esta branch `main`. Dez CSVs selecionados estão incluídos na branch `feature/full-dashboard`; os PNGs produzidos anteriormente permanecem locais, e os gráficos interativos são gerados pela aplicação.
 
 Essa validação demonstra reprodutibilidade local nas condições testadas.
 Não comprova compatibilidade com hospedagem em nuvem nem autorização
