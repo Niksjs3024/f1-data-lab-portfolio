@@ -4,9 +4,9 @@
 
 O F1 Data Lab transforma um estudo exploratório que começou no Google Colab em uma aplicação local, modular e auditável. A versão atual separa ingestão e validação, análise, modelagem, visualizações e interface. A pasta `notebooks/` conserva o contexto histórico; não é a fonte de verdade da implementação atual.
 
-> **Autorização para redistribuição dos dados ainda não confirmada.** Os cinco CSVs históricos locais correspondem byte a byte aos membros comparados na Fase 7C da distribuição *Formula 1 Race Data*, publicada por cjgdev no [Kaggle](https://www.kaggle.com/datasets/cjgdev/formula-1-race-data-19502017); a página declara CC BY-NC-SA 4.0. Essa correspondência e declaração não confirmam a fonte primária anterior ao Kaggle, a versão/release exato, a cadeia de direitos nem autorização para redistribuição pública. Dados climáticos, dados de terceiros e resultados derivados também não são automaticamente liberados. Este repositório não deve incluir `data/` ou `outputs/` até haver confirmação documentada dos direitos aplicáveis. Consulte [Proveniência e licenças](docs/PROVENIENCIA_E_LICENCAS.md).
+> **Publicação dos dados (04/11/2026):** O responsável pelo projeto declarou possuir autorização expressa para publicar os dez CSVs selecionados para o dashboard completo. A declaração não foi verificada independentemente e não concede licença irrestrita de reutilização a terceiros. Consulte [Proveniência e licenças](docs/PROVENIENCIA_E_LICENCAS.md).
 
-> **Uma cópia apenas do código não reproduz a aplicação completa.** O dashboard exige os cinco CSVs históricos locais para iniciar. A área climática requer arquivos locais adicionais. A distribuição Kaggle correspondente aos CSVs foi identificada, mas isso não equivale a confirmar autorização de aquisição ou redistribuição para este projeto; os arquivos não são distribuídos aqui.
+> **Dashboard completo:** esta branch inclui os dez CSVs necessários à execução das seis áreas do pp.py original, com gráficos, filtros e análises reais.
 
 ## O projeto
 
@@ -78,7 +78,7 @@ Os artefatos locais registram dez consultas de evento e 90 observações NOAA se
 - `src/climate_data.py` e `src/historical_reconciliation.py`: coleta/processamento local documentado e reconciliação histórica; não implicam autorização para redistribuir os dados usados.
 - `src/dashboard/`: carregamento, gráficos, explicações educativas e renderização das seis áreas.
 - `tests/`: testes unitários, de contrato e de interface; as fixtures compartilhadas se identificam como sintéticas.
-- `data/` e `outputs/`: material de trabalho local, não presumido publicável.
+- `data/` e `outputs/`: somente os dez CSVs selecionados estão preparados para distribuição nesta branch. Os demais arquivos permanecem locais.
 
 ## Requisitos e execução local
 
@@ -97,7 +97,7 @@ Antes de iniciar o dashboard, os cinco arquivos abaixo precisam estar disponíve
 - `constructors.csv`
 - `status.csv`
 
-**Eles não fazem parte desta distribuição e não há autorização de redistribuição confirmada.** A distribuição identificada é *Formula 1 Race Data*, por cjgdev no [Kaggle](https://www.kaggle.com/datasets/cjgdev/formula-1-race-data-19502017); a página declara CC BY-NC-SA 4.0. Na Fase 7C, os cinco CSVs locais coincidiram byte a byte com os membros correspondentes do ZIP comparado. A fonte primária anterior, o release exato, a cadeia de direitos e as condições de uso aplicáveis continuam pendentes; não obtenha nem redistribua arquivos sem confirmar que está autorizado. Sem esses arquivos, o carregamento principal interrompe o app com erro, e clonar o código não basta para abrir todas as áreas.
+**Os cinco CSVs históricos estão incluídos nesta branch.** A distribuição correspondente foi identificada como *Formula 1 Race Data*, por cjgdev no [Kaggle](https://www.kaggle.com/datasets/cjgdev/formula-1-race-data-19502017), cuja página declara CC BY-NC-SA 4.0. A identificação da distribuição não comprova a cadeia completa de direitos. O responsável informou possuir autorização expressa de publicação.
 
 Para iniciar, depois de preparar os dados localmente:
 
@@ -127,7 +127,7 @@ independente no Windows, utilizando Python 3.12.
 - As seis áreas do Streamlit foram verificadas manualmente no navegador local.
 - Nenhuma alteração pendente no Git ao término da validação.
 
-Os datasets e gráficos necessários à validação não integram o repositório.
+Esta branch inclui os dez CSVs necessários ao dashboard completo. Os dez PNGs produzidos anteriormente permanecem locais; os gráficos interativos são gerados pelo código da aplicação.
 
 Essa validação demonstra reprodutibilidade local nas condições testadas.
 Não comprova compatibilidade com hospedagem em nuvem nem autorização
@@ -153,7 +153,7 @@ Ela grava relatórios em `outputs/`. `--strict` trata warnings como bloqueantes,
 
 ## Instalação limpa, demonstração e limites de publicação
 
-Uma cópia de código sem dados pode servir para revisão do código e, após conferir os requisitos de cada teste, para executar testes baseados em fixtures sintéticas. Não é uma demonstração funcional do dashboard. Uma futura versão demonstrativa sintética poderia apresentar apenas dados inventados e identificados como sintéticos; **essa modalidade não está implementada** e não deve ser inferida a partir dos dados locais atuais.
+Esta branch disponibiliza a aplicação analítica original e os dez CSVs selecionados. A demonstração informativa demo_app.py permanece separada do dashboard completo. Outros datasets, figuras e artefatos locais não são automaticamente incluídos na distribuição.
 
 O `.gitignore` protege `data/`, `outputs/`, notebooks históricos, ambientes e configurações locais para reduzir inclusões acidentais. Ele não remove arquivos previamente rastreados e não é uma licença. Antes de publicar, confirme o estado de rastreamento e remova do pacote de publicação, com autorização apropriada, qualquer conteúdo que não esteja liberado.
 

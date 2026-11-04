@@ -1,5 +1,13 @@
 # Proveniência e licenças — F1 Data Lab
 
+## Atualização de publicação — 04/11/2026
+
+O responsável pelo projeto declarou possuir autorização expressa para publicar os dez CSVs selecionados para o dashboard completo, incluindo arquivos históricos, climáticos e derivados.
+
+Esta seção registra a declaração do responsável. Não representa verificação jurídica independente, não comprova a cadeia de direitos de terceiros e não concede licença aberta para o código ou os dados.
+
+A auditoria de 23/10/2026 abaixo é preservada como registro histórico das informações e pendências identificadas naquela data.
+
 **Revisão documental:** 2026-10-23. **Estado:** inventário de evidências e pendências; não é parecer jurídico nem autorização de redistribuição.
 
 ## Regra de publicação

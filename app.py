@@ -85,4 +85,4 @@ with st.sidebar:
     with st.expander("Avisos metodológicos", expanded=False):
         st.caption("Base histórica fornecida com o projeto. Frequências são observadas, não previsões.")
         st.caption("Grid é a posição efetiva de largada registrada, que pode diferir da classificação oficial.")
-        st.caption("Origem e licença dos CSVs: pendentes de documentação. Uso somente local.")
+        st.caption("Fontes, condições de uso e limitações documentadas no repositório. Resultados históricos não garantem previsões futuras.")
