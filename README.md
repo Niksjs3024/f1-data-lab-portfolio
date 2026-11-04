@@ -4,7 +4,7 @@
 
 ## Dashboard completo online
 
-**[🏎️ Acessar o F1 Data Lab — dashboard interativo](https://f1-data-lab-completo.streamlit.app/)**
+**[🏎️ Acessar o F1 Data Lab — dashboard interativo](https://f1-data-lab.streamlit.app/)**
 
 A aplicação hospedada executa o `app.py` da branch [`feature/full-dashboard`](https://github.com/Niksjs3024/f1-data-lab-portfolio/tree/feature/full-dashboard), com as seis áreas originais, gráficos, filtros, comparações históricas e avaliação de Machine Learning. Este é o **dashboard analítico completo**, não a demonstração informativa.
 
