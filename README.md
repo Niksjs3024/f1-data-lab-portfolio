@@ -2,11 +2,17 @@
 
 **Análise histórica da Fórmula 1 com Python, estatística, machine learning e Streamlit**
 
+## Dashboard completo online
+
+**[🏎️ Acessar o F1 Data Lab — dashboard interativo](https://f1-data-lab-completo.streamlit.app/)**
+
+A aplicação hospedada executa o `app.py` da branch [`feature/full-dashboard`](https://github.com/Niksjs3024/f1-data-lab-portfolio/tree/feature/full-dashboard), com as seis áreas originais, gráficos, filtros, comparações históricas e avaliação de Machine Learning. Este é o **dashboard analítico completo**, não a demonstração informativa.
+
 O F1 Data Lab transforma um estudo exploratório que começou no Google Colab em uma aplicação local, modular e auditável. A versão atual separa ingestão e validação, análise, modelagem, visualizações e interface. A pasta `notebooks/` conserva o contexto histórico; não é a fonte de verdade da implementação atual.
 
 > **Publicação dos dados (04/11/2026):** O responsável pelo projeto declarou possuir autorização expressa para publicar os dez CSVs selecionados para o dashboard completo. A declaração não foi verificada independentemente e não concede licença irrestrita de reutilização a terceiros. Consulte [Proveniência e licenças](docs/PROVENIENCIA_E_LICENCAS.md).
 
-> **Dashboard completo:** esta branch inclui os dez CSVs necessários à execução das seis áreas do pp.py original, com gráficos, filtros e análises reais.
+> **Dashboard completo:** esta branch inclui os dez CSVs necessários à execução das seis áreas do `app.py` original, com gráficos, filtros e análises reais.
 
 ## O projeto
 
