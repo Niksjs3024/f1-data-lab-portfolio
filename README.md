@@ -14,6 +14,26 @@ O F1 Data Lab transforma um estudo exploratório que começou no Google Colab em
 
 > **Execução local a partir da `main`:** esta branch não fornece os arquivos de dados necessários à inicialização do `app.py`. Para consultar o dashboard completo já hospedado, use o link acima; para examinar seu código com os CSVs selecionados, veja a branch `feature/full-dashboard`.
 
+## Visualizações do projeto
+
+As figuras abaixo foram produzidas pelas rotinas originais do F1 Data Lab e estão preservadas na branch `feature/full-dashboard`.
+
+### Probabilidades históricas por posição de largada
+
+![Gráfico original de probabilidades por posição de largada](https://raw.githubusercontent.com/Niksjs3024/f1-data-lab-portfolio/feature/full-dashboard/docs/images/probabilidades_por_grid.png)
+
+### Comparação histórica de voltas rápidas: 2013 × 2014
+
+![Gráfico original da comparação histórica de 2013 e 2014](https://raw.githubusercontent.com/Niksjs3024/f1-data-lab-portfolio/feature/full-dashboard/docs/images/comparacao_2013_2014.png)
+
+### Machine Learning: erro do modelo e baselines
+
+![Gráfico original comparando MAE do modelo e dos baselines](https://raw.githubusercontent.com/Niksjs3024/f1-data-lab-portfolio/feature/full-dashboard/docs/images/modelo_mae_comparacao.png)
+
+No teste temporal, a regressão linear **não superou o baseline baseado no grid** na métrica principal MAE. Esse resultado faz parte da avaliação técnica do projeto.
+
+**[Explorar o dashboard interativo completo](https://f1-data-lab.streamlit.app/)**
+
 ## O projeto
 
 O estudo inicial foi desenvolvido em Google Colab, com caminhos e etapas exploratórias vinculados àquele ambiente. A versão atual organiza o trabalho como um projeto Python executável localmente: o pipeline integra tabelas por IDs, as regras de qualidade ficam em módulos próprios, a análise e os modelos são separados da interface e o Streamlit orquestra as áreas do dashboard. Os notebooks permanecem como registro histórico, não como substitutos do código em `src/`.
